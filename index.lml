@@ -23,12 +23,15 @@
   (html
    (:head
     ((:meta :charset "UTF-8"))
-    (:title (:princ (concatenate 'string "perusio.org: " *perusio.org-slogan*)))
+    ((:meta :name "description" :content "My github page"))
+    ((:meta :name "keywords" :content "github, page, perusio, user"))
+    (:title (:princ (concatenate 'string "perusio github page: " *perusio.org-slogan*)))
     ;; Include Dean Edwards IE9.js.
     ;; For perfomance reasons: a trick from
     ;; http://www.phpied.com/conditional-comments-block-downloads/#comments
     (:comment "[if IE]><link/><![endif]")
-    (:comment "[if lt IE 9]><script src=\"js/libraries/IE9.js\"></script><![endif]")
+    (:comment "[if lt IE 9]><script src=\"js/libraries/IE9.js\"></script><![endif]
+")
     ((:link :rel "stylesheet" :href "css/tinycss/libraries/reset.css"))
     ((:link :rel "stylesheet" :href "css/tinycss/libraries/fonts-min.css"))
     ((:link :rel "stylesheet" :href "css/tinycss/grids/base-grid.css"))
@@ -76,14 +79,14 @@
              Drupal, " (:b "framework" ) " is more appropriate. Before
              you jump to conclusions I don't think PHP is a \"great\"
              language. But I find it interesting in a low tech sort of
-             way, since it's capable of achieveing so much, while
+             way, since it's capable of achieving so much, while
              hardly being the greatest language design under the
              Sun. When I listen to language zealots (mostly Ruby
              wannabe ninjas) trashing PHP because of this and that I
              recall what the
              great " ((:a :href "http://en.wikipedia.org/wiki/Nikolaus_Harnoncourt") "Nikolaus
              Harnoncourt") " says about playing early music in modern
-             instruments.")
+             instruments:")
 
          (:blockquote
           "It's more important what you have in your head as a
@@ -97,7 +100,7 @@
          high performance web server. It's now sort of an obsession
          for me. I can't stand Apache and even less utter crap like
          IIS &mdash; don't even get me started on that wonderful
-         Windows platform. I mantain my Nginx configs here, namely the
+         Windows platform. I maintain my Nginx configs here, namely the
          one
          for " ((:a :href "https://github.com/perusio/drupal-with-nginx") "running
          Drupal with Nginx") ".")
@@ -105,7 +108,7 @@
 
          (:p "I've been
          using " ((:a :href "http://en.wikipedia.org/wiki/Emacs") "emacs") " since
-         I couldn't grok vi on a good old DECstation 5100 runnning
+         I couldn't grok vi on a good old DECstation 5100 running
          Ultrix. I came to Unix from VMS and specially its great
          editor EDT. vi was a big jump backward. Today I use mostly vi
          when I'm editing config files as root. For the rest, I'm a
