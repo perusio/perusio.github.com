@@ -88,8 +88,8 @@
              instruments:")
 
          (:blockquote
-          "It's more important what you have in your head as a
-          performer of Early Music than the instrument that you play."
+          (:p  "It's more important what you have in your head as a
+          performer of Early Music than the instrument that you play.")
           )
 
          (:p "Do you grok the manifold implications of this sentence
