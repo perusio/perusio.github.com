@@ -41,7 +41,7 @@
     ((:link :rel "stylesheet" :href "css/grid-perusio.org.css"))
     ;; Fonts.
     ((:link :rel "stylesheet" :href "fonts/Delicious-web/stylesheet.css"))
-    ((:link :rel "stylesheet" :href "fonts/CpMono-web/stylesheet.css"))
+    ((:link :rel "stylesheet" :href "fonts/CPMono-web/stylesheet.css"))
     ((:link :rel "stylesheet" :href "fonts/CartoGothic-Std/stylesheet.css"))
     ((:link :rel "stylesheet" :href "fonts/CCIcons-web/stylesheet.css"))
     ((:link :rel "stylesheet" :href "css/layout.css"))
