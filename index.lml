@@ -138,7 +138,7 @@
          ((:a :href "http://creativecommons.org/licenses/by/2.5/pt" :rel "license"  :class "normalTip" :title "Licença CC-BY Portugal") "cb")
          )
         )
-      (:pubdate "Updated December 2 2010")        
+        (:pubdate "Updated December 2 2010")
        ) ; middle unit
       ((:div :class "unit size15of48 lastUnit")
        ((:div :class "sidebar-right")
