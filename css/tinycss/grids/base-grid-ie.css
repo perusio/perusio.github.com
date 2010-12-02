@@ -1,0 +1,13 @@
+/* IE specific hacks for the tinycss framework */
+
+.line{ 
+  *zoom: 1; /* hasLayout */
+}
+
+.lastUnit {
+  *display: block; /* IE */
+  *zoom: 1;        /* hasLayout */
+  _position: relative; /* IE 6 and below */
+  _left: -3px;
+  _margin-right: -3px;
+}

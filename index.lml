@@ -1,0 +1,152 @@
+;;; -*-lisp-*-
+;;; My github page.
+
+(in-package #:lml2)
+
+(defparameter *perusio.org-slogan* "Running the Feedback-Feedforward Loop of Life"
+  "Slogan for perusio.org")
+
+(defmacro :pubdate (date)
+  "Print the publication DATE."
+  `(html (:princ  (concatenate 'string "<time datetime=\"" 
+                               ,(local-time:format-timestring
+                                 nil
+                                 (local-time:now) :format
+                                 '((:year 4) #\-
+                                   (:month 2) #\-
+                                   (:day 2) #\T
+                                   (:hour 2) #\:
+                                   (:min 2) #\: (:sec 2) :gmt-offset-or-z))
+                               "\" pubdate>" ,date "</time>"))))
+
+(html-file-page ("index" :format :html5)
+  (html
+   (:head
+    ((:meta :charset "UTF-8"))
+    (:title (:princ (concatenate 'string "perusio.org: " *perusio.org-slogan*)))
+    ;; Include Dean Edwards IE9.js.
+    ;; For perfomance reasons: a trick from
+    ;; http://www.phpied.com/conditional-comments-block-downloads/#comments
+    (:comment "[if IE]><link/><![endif]")
+    (:comment "[if lt IE 9]><script src=\"js/libraries/IE9.js\"></script><![endif]")
+    ((:link :rel "stylesheet" :href "css/tinycss/libraries/reset.css"))
+    ((:link :rel "stylesheet" :href "css/tinycss/libraries/fonts-min.css"))
+    ((:link :rel "stylesheet" :href "css/tinycss/grids/base-grid.css"))
+    ((:link :rel "stylesheet" :href "css/tinycss/module/mod_nav.css"))
+    ((:link :rel "stylesheet" :href "css/tinycss/template/template.css"))
+    ;; Grid.
+    ((:link :rel "stylesheet" :href "css/grid-perusio.org.css"))
+    ;; Fonts.
+    ((:link :rel "stylesheet" :href "fonts/Delicious-web/stylesheet.css"))
+    ((:link :rel "stylesheet" :href "fonts/CpMono-web/stylesheet.css"))
+    ((:link :rel "stylesheet" :href "fonts/CartoGothic-Std/stylesheet.css"))
+    ((:link :rel "stylesheet" :href "fonts/CCIcons-web/stylesheet.css"))
+    ((:link :rel "stylesheet" :href "css/layout.css"))
+    ((:link :rel "stylesheet" :href "css/style.css"))
+    )                                   ; head
+   (:body  
+    ((:div :class "page")
+     (:article
+      ((:div :class "line")
+       ((:div :class "unit size3of48") "&nbsp;")
+       ((:div :class "unit size30of48")
+        (:header
+         (:hgroup
+          (:h1 "perusio")
+          (:h2 (:princ *perusio.org-slogan*)))
+         )                              ; header
+        ((:section :id "top")
+         ((:header :class "post-title")
+          (:h2 (( :a :href ".") "Rehersal for an introduction")))
+
+         (:p "My name is António Almeida I'm a coder, entrepreneur,
+         radio author and aspiring film maker living in Portugal.")
+
+         (:p "Introductions are brittle things. They are best viewed
+          from afar. Putting them under the microscope makes for a
+          awkward experience, both for the person introducing himself
+          or for the person hearing or reading it. So indulge me a
+          little and call your suspension of disbelief while I take
+          the stage to address you.")
+
+         (:p "I'm very much interested on the web and everything that
+          revolves around it. Which translates in to a lot of stuff. "
+             ((:a :href "http://drupal.org") "Drupal") " is my choice
+             for Content Management Systems, or in the case of
+             Drupal, " (:b "framework" ) " is more appropriate. Before
+             you jump to conclusions I don't think PHP is a \"great\"
+             language. But I find it interesting in a low tech sort of
+             way, since it's capable of achieveing so much, while
+             hardly being the greatest language design under the
+             Sun. When I listen to language zealots (mostly Ruby
+             wannabe ninjas) trashing PHP because of this and that I
+             recall what the
+             great " ((:a :href "http://en.wikipedia.org/wiki/Nikolaus_Harnoncourt") "Nikolaus
+             Harnoncourt") " says about playing early music in modern
+             instruments.")
+
+         (:blockquote
+          "It's more important what you have in your head as a
+          performer of Early Music than the instrument that you play."
+          )
+
+         (:p "Do you grok the manifold implications of this sentence
+         in the programming world?")
+         
+         (:p ((:a :href "http://nginx.org") "Nginx") " is a modern
+         high performance web server. It's now sort of an obsession
+         for me. I can't stand Apache and even less utter crap like
+         IIS &mdash; don't even get me started on that wonderful
+         Windows platform. I mantain my Nginx configs here, namely the
+         one
+         for " ((:a :href "https://github.com/perusio/drupal-with-nginx") "running
+         Drupal with Nginx") ".")
+
+
+         (:p "I've been
+         using " ((:a :href "http://en.wikipedia.org/wiki/Emacs") "emacs") " since
+         I couldn't grok vi on a good old DECstation 5100 runnning
+         Ultrix. I came to Unix from VMS and specially its great
+         editor EDT. vi was a big jump backward. Today I use mostly vi
+         when I'm editing config files as root. For the rest, I'm a
+         man of simple tastes: I use emacs.")
+
+         (:p "I'm a
+         big " ((:a :href "http://en.wikipedia.org/wiki/Lisp_(programming_language)") "Lisp") "
+         fan. I happen to think it's the " (:b "greatest") " language
+         ever invented. Lisp is a huge advantage for developing new
+         projects since it allows you to quickly hack something
+         together in order to try a concept. I use it a lot when
+         developing sites and products in Drupal. For instance: I
+         use " ((:a :href "http://clsql.b9.com/") "clsql") " for data
+         migration tasks. This page was built in Lisp and then
+         compiled to HTML using a fork
+         of " ((:a :href "http://lml2.b9.com/") "LML2") " I
+         mantain " ((:a :href "https://github.com/perusio/lml2-html5") "here")".")
+
+         (:p "Here is the list of all my projects on github: "
+             
+             (:code ((:a :href "https://github.com/perusio") "https://github.com/perusio"))
+
+             )
+         )                              ; content        
+       (:footer
+        ((:a :class "nav-top" :href "#top") "goto top")
+        ((:div :class "license")
+         ((:a :href "http://creativecommons.org/licenses/by/2.5/pt" :rel "license"  :class "normalTip" :title "Licença CC-BY Portugal") "cb")
+         )
+        )
+      (:pubdate "Updated December 2 2010")        
+       ) ; middle unit
+      ((:div :class "unit size15of48 lastUnit")
+       ((:div :class "sidebar-right")
+        (:aside ((:img :src "img/appa_photo_blog.png"))
+                )
+        )
+       )
+       )
+      )
+     )
+    )
+   )
+  )

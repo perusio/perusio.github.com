@@ -1,0 +1,38 @@
+/* template.css ---                                                  
+   Copyright (C) 2010 António P. P. Almeida <appa@perusio.net>
+
+   Author: António P. P. Almeida <appa@perusio.net>
+   
+   This program is free software, you can redistribute it and/or
+   modify it under the terms of the new-style BSD license.
+   You should have received a copy of the BSD license along with
+   this program. If not, see <http://www.debian.org/misc/bsd.license>.
+
+   Inspired & stolen from Nicole Sullivan's OOCSS http://oocss.org
+   Basic templates for the tinycss framework.                        */
+
+.main {
+  display: table-cell;
+  width: auto;
+}
+
+.body:after, .main:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  overflow: hidden; 
+  height: 0 !important;
+  line-height: 0;
+  font-size: xx-large;
+  content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+
+.page{
+  margin: 0 auto;
+  width: 960px;
+} 
+
+.liquid{
+  width: auto;
+  margin: 0;
+}

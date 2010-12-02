@@ -1,0 +1,72 @@
+/* CSS layout for perusio.org  */
+
+p {
+  padding-bottom: 1.5em;
+}
+
+pre, pre.prettyprint {
+  padding: 1em 0 2.5em;
+}
+
+.related nav ul li h3 {
+  padding-top: 0.5em;
+}
+
+.sidebar-right, header {
+  padding-top: 4.63em;
+}
+
+section {
+  margin-top: 3.5em;
+}
+
+section.related {
+  margin-top: 0;
+}
+
+nav ul {
+ margin-top: 1em;
+}
+
+footer {
+  margin: 15em 0 1em;
+}
+
+.content-tags {
+  margin: 1em 0;
+}
+
+.related-tags {
+  margin: 0.25em 0 0.5em;
+}
+
+.related-tags li {
+  margin-right: 0.25em;
+  padding-right: 0.25em;
+}
+
+.related nav ul li {
+  padding-right: 0;
+}
+
+#search-form-block, .sidebar-right aside img {
+  margin-right: 2.3em;
+}
+  
+#search-form, .sidebar-right aside img {
+  float: right;
+  clear: right;
+}
+
+#search-form {
+  margin-top: 0.85em;
+  width: 80%;
+}
+
+.license {
+  margin-bottom: 10px;
+}
+
+.post-title {
+  margin-bottom: 2em;
+}

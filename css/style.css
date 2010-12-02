@@ -1,0 +1,198 @@
+/* CSS style file for perusio.org */
+
+body {
+  font-family: 'DeliciousRoman', sans-serif; 
+  line-height: 120%;
+}
+
+a:link {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #AAAAFF;
+}
+
+b, em {
+  font-family: 'DeliciousRoman', sans-serif;
+  color: #1e90ff;
+  font-weight: normal;
+}
+
+small {
+  font-size: 85%;
+}
+
+code, pre {
+  font-family: 'CPMono_v07Plain', monospace;
+  line-height: 1.4em;
+  font-size: 85%;
+  color: #1B3F8B;
+}
+
+pre.prettyprint {
+  border: none;
+}
+
+p {
+  font-size: 1.539em;
+  line-height: 1.2em;
+}
+
+blockquote {
+  font-family: 'DeliciousItalic', sans-serif;
+  font-size: 1.539em;
+  line-height: 1.2em;
+  font-style: italic;
+  padding: 1em 3em;
+}
+
+header h1, header hgroup h1 {
+  font-family: 'CartoGothicStdBold', sans-serif;
+  color: #1e90ff;
+}
+
+header hgroup h1 {
+  font-size: 6em;
+  line-height: 120%;
+}
+
+header hgroup h2, .related header h2 {
+  font-family: 'DeliciousSmallCapsRegular', sans-serif;
+  font-size: 2em;
+  line-height: 120%;
+  font-variant: small-caps;
+}
+
+.related header h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+nav ul li a:link {
+  font-size: 1.5em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+
+body.home span.home a:link, body.drupal span.drupal a:link, 
+body.lisp span.lisp a:link, body.webdev span.webdev a:link, 
+body.projects span.projects a:link {
+  background-color: #1e90ff;
+}
+
+
+
+.post-title h2 {
+  font-family: 'CartoGothicStdBold', sans-serif;
+  font-size: 2em;
+  line-height: 120%;
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+section div.content, section div.related {
+  font-size: 1.5em;
+  line-height: 120%;
+}
+
+.content-tags ul {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+.related nav ul li h3 a:link {
+  font-family: 'CartoGothicStdBold', sans-serif;
+  font-weight: bold;
+  font-size: 100%;
+  color: #1e90ff;
+  background-color: transparent;
+  padding-left: 0;
+}
+
+
+.content-tags ul li {
+  display: inline;
+}
+
+
+
+nav ul li a:link, .content-tags ul li a:link, .related-tags li a:link {
+  font-family: 'DeliciousBold', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1B3F8B;
+  padding: 0 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+
+
+.related-tags li a:link {
+  font-size: 77%;
+}
+
+.related nav ul li h3 a:visited, nav ul li a:visited, .content-tags ul
+li a:visited, .related-tags li a:visited {
+  background-color: #CCCCFF;
+}
+
+.related nav ul li h3 a:hover, nav ul li a:hover, .content-tags ul li
+a:hover, a:hover, .related-tags li a:hover {
+  color: #FF3300;
+}
+
+section footer {
+  margin: 2em 0;
+}
+
+section footer, .content-tags ul li a {
+  font-size: 0.8em;
+  margin-right: 1em;
+}
+
+section footer time {
+  color: #1B3F8B;
+  font-family: 'DeliciousBold', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.sidebar-right aside img {
+  border: 4px solid #1e90ff;
+}
+
+#search-form {
+  font-family: 'DeliciousBold', sans-serif;
+  font-weight: bold;
+  clear: right;
+  color: #FF3300;
+  font-size: 1.5em;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border: 2px solid #1e90ff
+}
+
+.license {
+  font-family: 'CCIconsRegular';
+  font-size: 4em;
+  letter-spacing: 0.4em;
+}
+
+.nav-top {
+  float: right;
+  font-family: 'DeliciousBold', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+

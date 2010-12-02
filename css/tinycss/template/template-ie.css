@@ -1,0 +1,13 @@
+/* IE hacks for the template of the tinycss framework */
+
+.main {
+  *display: block;
+}
+
+.body, .main {
+  *zoom: 1; /* hasLayout */
+}
+
+.page{
+  _text-align: left; /* text-align IE5.5 */
+} 
