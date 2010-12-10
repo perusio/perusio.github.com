@@ -113,6 +113,16 @@
          when I'm editing config files as root. For the rest, I'm a
          man of simple tastes: I use emacs.")
 
+         (:p "I mantain
+         a " ((:a :href "https://github.com/perusio/magit" ) "github
+         fork") " of the \"official\" " ((:a :href "https://github.com/philjackson/magit") "Magit") " repo on github. This fork
+         differs from the original repo only in the extent that a
+         debian build setup for creating the package is
+         incorporated. Basically it's a " (:b "debianization") " of
+         the official version. The official debian version available
+         on " ((:a :href "http://packages.debian.org/sid/magit") "unstable (sid)") "
+         lags considerably from the current development version.")
+         
          (:p "I'm a
          big " ((:a :href "http://en.wikipedia.org/wiki/Lisp_(programming_language)") "Lisp") "
          fan. I happen to think it's the " (:b "greatest") " language
@@ -131,14 +141,16 @@
              (:code ((:a :href "https://github.com/perusio") "https://github.com/perusio"))
 
              )
+
+         (:p "I mantain a " ((:a :href "http://debian.perusio.net/debian.html") "debian") " repository with some of the stuff I host here.")
+         (:footer
+          ((:a :class "nav-top" :href "#top") "goto top")
+          ((:div :class "license")
+           ((:a :href "http://creativecommons.org/licenses/by/2.5/pt" :rel "license"  :class "normalTip" :title "Licença CC-BY Portugal") "cb")
+           )
+          )
          )                              ; content        
-       (:footer
-        ((:a :class "nav-top" :href "#top") "goto top")
-        ((:div :class "license")
-         ((:a :href "http://creativecommons.org/licenses/by/2.5/pt" :rel "license"  :class "normalTip" :title "Licença CC-BY Portugal") "cb")
-         )
-        )
-        (:pubdate "Updated December 2 2010")
+        (:pubdate "Updated December 10 2010")
        ) ; middle unit
       ((:div :class "unit size15of48 lastUnit")
        ((:div :class "sidebar-right")
