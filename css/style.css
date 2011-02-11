@@ -5,7 +5,7 @@ body {
   line-height: 120%;
 }
 
-a:link {
+a, a:link {
   color: #1e90ff;
   text-decoration: none;
 }

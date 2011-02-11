@@ -97,13 +97,13 @@
          
          (:p ((:a :href "http://nginx.org") "Nginx") " is a modern
          high performance web server. It's now sort of an obsession
-         for me. I can't stand Apache and even less utter crap like
-         IIS &mdash; don't even get me started on that wonderful
-         Windows platform. I maintain my Nginx configs here, namely the
+         for me. I no longer use Apache and even never ever touched 
+         IIS.
+         I maintain my Nginx configs here, namely the
          one
          for " ((:a :href "https://github.com/perusio/drupal-with-nginx") "running
          Drupal with Nginx") ".")
-
+         
 
          (:p "I've been
          using " ((:a :href "http://en.wikipedia.org/wiki/Emacs") "emacs") " since
