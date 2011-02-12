@@ -137,7 +137,8 @@
          mantain " ((:a :href "https://github.com/perusio/lml2-html5") "here")".")
 
          (:p "Here is the list of all my projects on github: "
-             
+
+             (:br)
              (:code ((:a :href "https://github.com/perusio") "https://github.com/perusio"))
 
              )
@@ -150,7 +151,7 @@
            )
           )
          )                              ; content        
-        (:pubdate "Updated December 10 2010")
+        (:pubdate "Updated February 12 2010")
        ) ; middle unit
       ((:div :class "unit size15of48 lastUnit")
        ((:div :class "sidebar-right")
