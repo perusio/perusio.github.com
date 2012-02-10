@@ -20,61 +20,75 @@
                                "\" pubdate>" ,date "</time>"))))
 
 (html-file-page ("index" :format :html5)
-                (html
-                 (:head
-                  ((:meta :charset "UTF-8"))
-                  ((:meta :name "description" :content "My github page"))
-                  ((:meta :name "keywords" :content "github, page, perusio, user"))
-                  (:title (:princ (concatenate 'string "perusio github page: " *perusio.org-slogan*)))
-                  ;; Include Dean Edwards IE9.js.
-                  ;; For perfomance reasons: a trick from
-                  ;; http://www.phpied.com/conditional-comments-block-downloads/#comments
-                  (:comment "[if IE]><link/><![endif]")
-                  (:comment "[if lt IE 9]><script src=\"js/libraries/IE9.js\"></script><![endif]
+  (html
+   (:head
+    ((:meta :charset "UTF-8"))
+    ((:meta :name "description" :content "My github page"))
+    ((:meta :name "keywords" :content "github, page, perusio, user"))
+    (:title (:princ (concatenate 'string "perusio github page: " *perusio.org-slogan*)))
+    ;; Include Dean Edwards IE9.js.
+    ;; For perfomance reasons: a trick from
+    ;; http://www.phpied.com/conditional-comments-block-downloads/#comments
+    (:comment "[if IE]><link/><![endif]")
+    (:comment "[if lt IE 9]><script src=\"js/libraries/IE9.js\"></script><![endif]
 ")
-                  ((:link :rel "stylesheet" :href "css/tinycss/libraries/reset.css"))
-                  ((:link :rel "stylesheet" :href "css/tinycss/libraries/fonts-min.css"))
-                  ((:link :rel "stylesheet" :href "css/tinycss/grids/base-grid.css"))
-                  ((:link :rel "stylesheet" :href "css/tinycss/module/mod_nav.css"))
-                  ((:link :rel "stylesheet" :href "css/tinycss/template/template.css"))
-                  ;; Grid.
-                  ((:link :rel "stylesheet" :href "css/grid-perusio.org.css"))
-                  ;; Fonts.
-                  ((:link :rel "stylesheet" :href "fonts/Delicious-web/stylesheet.css"))
-                  ((:link :rel "stylesheet" :href "fonts/CPMono-web/stylesheet.css"))
-                  ((:link :rel "stylesheet" :href "fonts/CartoGothic-Std/stylesheet.css"))
-                  ((:link :rel "stylesheet" :href "fonts/CCIcons-web/stylesheet.css"))
-                  ((:link :rel "stylesheet" :href "css/layout.css"))
-                  ((:link :rel "stylesheet" :href "css/style.css"))
-                  )                                   ; head
-                 (:body
-                  ((:div :class "page")
-                   (:article
-                    ((:div :class "line")
-                     ((:div :class "unit size3of48") "&nbsp;")
-                     ((:div :class "unit size30of48")
-                      (:header
-                       (:hgroup
-                        (:h1 "perusio")
-                        (:h2 (:princ *perusio.org-slogan*)))
-                       )                              ; header
-                      ((:section :id "top")
-                       ((:header :class "post-title")
-                        (:h2 (( :a :href ".") "Rehersal for an introduction")))
+    ((:link :rel "stylesheet" :href "css/tinycss/libraries/reset.css"))
+    ((:link :rel "stylesheet" :href "css/tinycss/libraries/fonts-min.css"))
+    ((:link :rel "stylesheet" :href "css/tinycss/grids/base-grid.css"))
+    ((:link :rel "stylesheet" :href "css/tinycss/module/mod_nav.css"))
+    ((:link :rel "stylesheet" :href "css/tinycss/template/template.css"))
+    ;; Grid.
+    ((:link :rel "stylesheet" :href "css/grid-perusio.org.css"))
+    ;; Fonts.
+    ((:link :rel "stylesheet" :href "fonts/Delicious-web/stylesheet.css"))
+    ((:link :rel "stylesheet" :href "fonts/CPMono-web/stylesheet.css"))
+    ((:link :rel "stylesheet" :href "fonts/CartoGothic-Std/stylesheet.css"))
+    ((:link :rel "stylesheet" :href "fonts/CCIcons-web/stylesheet.css"))
+    ((:link :rel "stylesheet" :href "css/layout.css"))
+    ((:link :rel "stylesheet" :href "css/style.css"))
+    )                                   ; head
+   (:body
+    ((:div :class "page")
+     (:article
+      ((:div :class "line")
+       ((:div :class "unit size3of48") "&nbsp;")
+       ((:div :class "unit size30of48")
+        (:header
+         (:hgroup
+          (:h1 "perusio")
+          (:h2 (:princ *perusio.org-slogan*)))
+         )                              ; header
+        ((:section :id "top")
+         ((:header :class "post-title")
+          (:h2 (( :a :href ".") "Rehersal for an introduction")))
 
-                       (:p "My name is António Almeida I'm a coder, entrepreneur,
-         radio author and aspiring film maker living in Portugal.")
+         (:p "My name is António Almeida I like coding and doing "
+             (:b "creative") " &mdash; how's that for a loaded word ;) &mdash; stuff in general.")
 
-                       (:p "Introductions are brittle things. They are best viewed
+         (:p "Introductions are brittle things. They are best viewed
           from afar. Putting them under the microscope makes for a
           awkward experience, both for the person introducing himself
           or for the person hearing or reading it. So indulge me a
           little and call your suspension of disbelief while I take
           the stage to address you.")
 
-                       (:p "I'm very much interested on the web and everything that
-          revolves around it. Which translates in to a lot of stuff. "
-                           ((:a :href "http://drupal.org") "Drupal") " is my choice
+         (:p "I'm very much interested on the web and everything that
+          revolves around it. Which translates in to a lot of
+          stuff. By web I mean all technologies that enable it. From
+          the OS to the application. I consider that mobile makes part
+          of the web, understood as a way of providing streams that we
+          can get immersed in. The famous Robert Heinlein " ((:a :href "https://en.wikiquote.org/wiki/Robert_A._Heinlein#Time_Enough_for_Love_.281973.29") "quote") ":")
+
+         (:blockquote
+          (:p  "Specialization is for insects.")
+          )
+
+         (:p "applies to the web. Therefore having a cross sectional
+         knowledge of the web stack is tantamount
+         to " (:b "grokking") " it. To use another Heinleinism.")
+
+         (:p
+          ((:a :href "http://drupal.org") "Drupal") " is my choice
              for Content Management Systems, or in the case of
              Drupal, " (:b "framework" ) " is more appropriate. Before
              you jump to conclusions I don't think PHP is a \"great\"
@@ -87,15 +101,15 @@
              Harnoncourt") " says about playing early music on modern
              instruments:")
 
-                       (:blockquote
-                        (:p  "It's more important what you have in your head as a
+         (:blockquote
+          (:p  "It's more important what you have in your head as a
           performer of Early Music than the instrument that you play.")
-                        )
+          )
 
-                       (:p "Do you grok the manifold implications of this sentence
+         (:p "Do you grok the manifold implications of this sentence
          in the programming world?")
 
-                       (:p ((:a :href "http://nginx.org") "Nginx") " is a modern
+         (:p ((:a :href "http://nginx.org") "Nginx") " is a modern
          high performance web server. It's now sort of an obsession
          for me. I no longer use Apache and even never ever touched
          IIS.
@@ -105,7 +119,7 @@
          Drupal with Nginx") ".")
 
 
-                       (:p "I've been
+         (:p "I've been
          using " ((:a :href "http://en.wikipedia.org/wiki/Emacs") "emacs") " since
          I couldn't grok vi on a good old DECstation 5100 running
          Ultrix. I came to Unix from VMS and specially its great
@@ -113,9 +127,9 @@
          when I'm editing config files as root. For the rest, I'm a
          man of simple tastes: I use emacs.")
 
-                       (:p "I mantain
+         (:p "I mantain
          a " ((:a :href "https://github.com/perusio/magit" ) "github
-         fork") " of the \"official\" " ((:a :href "https://github.com/philjackson/magit") "Magit") " repo on github. This fork
+         fork") " of the \"official\" " ((:a :href "https://github.com/magit/magit") "Magit") " repo on github. This fork
          differs from the original repo only in the extent that a
          debian build setup for creating the package is
          incorporated. Basically it's a " (:b "debianization") " of
@@ -123,7 +137,7 @@
          on " ((:a :href "http://packages.debian.org/sid/magit") "unstable (sid)") "
          lags considerably from the current development version.")
 
-                       (:p "I'm a
+         (:p "I'm a
          big " ((:a :href "http://en.wikipedia.org/wiki/Lisp_(programming_language)") "Lisp") "
          fan. I happen to think it's the " (:b "greatest") " language
          ever invented. Lisp is a huge advantage for developing new
@@ -136,7 +150,7 @@
          of " ((:a :href "http://lml2.b9.com/") "LML2") " I
          mantain " ((:a :href "https://github.com/perusio/lml2-html5") "here")".")
 
-                       (:p "I'm now a interested
+         (:p "I'm now a interested
                        in " ((:a :href "https://en.wikipedia.org/wiki/Lua_(programming_language") "Lua") "
                        a language with a clear Lispy heritage. Even if
                        the syntax is rather different. My interest was
@@ -144,36 +158,36 @@
                        powerful " ((:a :href "http://wiki.nginx.org/HttpLuaModule"
                                        ) "Embedded Lua Module") " for Nginx.")
 
-                       (:p "Here is the list of all my projects on github: "
+         (:p "Here is the list of all my projects on github: "
 
-                           (:br)
-                           (:code ((:a :href "https://github.com/perusio") "https://github.com/perusio"))
+             (:br)
+             (:code ((:a :href "https://github.com/perusio") "https://github.com/perusio"))
 
-                           )
+             )
 
-                       (:p "I mantain a " ((:a :href "http://debian.perusio.net/debian.html") "debian") " repository with some of the stuff I host here.")
+         (:p "I mantain a " ((:a :href "http://debian.perusio.net/debian.html") "debian") " repository with some of the stuff I host here.")
 
-                       (:p "Outside of coding I'm obsessed with " ((:a :href "https://www.youtube.com/watch?v=kCqJe-zSoE0") "Late medieval Italian music") " and " ((:a href "https://www.youtube.com/watch?v=gwbpnl07rTs") "cinema") ".")
+         (:p "Outside of coding I'm obsessed with " ((:a :href "https://www.youtube.com/watch?v=kCqJe-zSoE0") "Late medieval Italian music") " and " ((:a href "https://www.youtube.com/watch?v=gwbpnl07rTs") "cinema") ".")
 
 
-                       (:footer
-                        ((:a :class "nav-top" :href "#top") "goto top")
-                        ((:div :class "license")
-                         ((:a :href "http://creativecommons.org/licenses/by/2.5/pt" :rel "license"  :class "normalTip" :title "Licença CC-BY Portugal") "cb")
-                         )
-                        )
-                       )                              ; content
-                      (:pubdate "Updated February 10 2012")
-                      ) ; middle unit
-                     ((:div :class "unit size15of48 lastUnit")
-                      ((:div :class "sidebar-right")
-                       (:aside ((:img :src "img/appa_photo_blog.png"))
-                               )
-                       )
-                      )
-                     )
-                    )
-                   )
-                  )
+         (:footer
+          ((:a :class "nav-top" :href "#top") "goto top")
+          ((:div :class "license")
+           ((:a :href "http://creativecommons.org/licenses/by/2.5/pt" :rel "license"  :class "normalTip" :title "Licença CC-BY Portugal") "cb")
+           )
+          )
+         )                              ; content
+        (:pubdate "Updated February 10 2012")
+        )                               ; middle unit
+       ((:div :class "unit size15of48 lastUnit")
+        ((:div :class "sidebar-right")
+         (:aside ((:img :src "img/appa_photo_blog.png"))
                  )
-                )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  )
