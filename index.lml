@@ -152,17 +152,18 @@
 
          (:p "I'm now a interested
                        in " ((:a :href "https://en.wikipedia.org/wiki/Lua_(programming_language") "Lua") "
-                       a language with a clear Lispy heritage. Even if
+                       : a language with a clear Lispy heritage. Even if
                        the syntax is rather different. My interest was
                        stoked by the
                        powerful " ((:a :href "http://wiki.nginx.org/HttpLuaModule"
-                                       ) "Embedded Lua Module") " for Nginx.")
+                                       ) "Embedded Lua Module") " for
+                                       Nginx. And advanced features
+                                       like JIT compilation, prototypical inheritance and
+                                       more.")
 
          (:p "Here is the list of all my projects on github: "
-
              (:br)
              (:code ((:a :href "https://github.com/perusio") "https://github.com/perusio"))
-
              )
 
          (:p "I mantain a " ((:a :href "http://debian.perusio.net/debian.html") "debian") " repository with some of the stuff I host here.")
@@ -177,7 +178,7 @@
            )
           )
          )                              ; content
-        (:pubdate "Updated February 10 2012")
+        (:pubdate "Updated February 11 2012")
         )                               ; middle unit
        ((:div :class "unit size15of48 lastUnit")
         ((:div :class "sidebar-right")
