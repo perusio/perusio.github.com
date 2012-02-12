@@ -151,8 +151,8 @@
          mantain " ((:a :href "https://github.com/perusio/lml2-html5") "here")".")
 
          (:p "I'm now a interested
-                       in " ((:a :href "https://en.wikipedia.org/wiki/Lua_(programming_language") "Lua") "
-                       : a language with a clear Lispy heritage. Even if
+                       in " ((:a :href "https://en.wikipedia.org/wiki/Lua_(programming_language") "Lua")
+                       ": a language with a clear Lispy heritage. Even if
                        the syntax is rather different. My interest was
                        stoked by the
                        powerful " ((:a :href "http://wiki.nginx.org/HttpLuaModule"
